@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruitkha</title>
-    <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" href="css/check-out.css">
     <link rel="stylesheet" href="css/footer-nav.css">
     <script src="js/script.js"></script>
     <link rel="stylesheet" href="booststrap/css/bootstrap.min.css">
     <script src="booststrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
@@ -78,87 +80,118 @@
                 </nav>
                 <div class="content">
                     <p>FRESH AND ORGANIC</p>
-                    <h1>Shop</h1>
+                    <h1>Check Out Product</h1>
                 </div>
             </div>
         </div>
         <div class="section2">
-          <div id="myBtnContainer">
-            <button class="btn active" onclick="filterSelection('all')"> All</button>
-            <button class="btn" onclick="filterSelection('strawberry')"> Strawberry</button>
-            <button class="btn" onclick="filterSelection('lemon')"> Lemon</button>
-            <button class="btn" onclick="filterSelection('grape')"> Berry</button>
-          </div>
-          
-          <div class="container row">
-              <div class="filterDiv strawberry col-sm-4">
-                  <div class="card">
-                    <img src="img/products/product-img-1.jpg" alt="">
-                    <h3>Strawberry</h3>
-                    <p>Per Kg</p>
-                    <h2>85$</h2>
-                    <a class="shopping-cart-button" href="cart.html"><i class="fas fa-shopping-cart"></i>Add to Cart</a>
-                  </div>
-              </div>
-              <div class="filterDiv grape col-sm-4">
-                  <div class="card">
-                    <img src="img/products/product-img-2.jpg" alt="">
-                    <h3>Berry</h3>
-                    <p>Per Kg</p>
-                    <h2>70$</h2>
-                    <a class="shopping-cart-button" href="cart.html"><i class="fas fa-shopping-cart"></i>Add to Cart</a>
-                  </div>
-              </div>
-              <div class="filterDiv lemon col-sm-4">
-                  <div class="card ">
-                    <img src="img/products/product-img-3.jpg" alt="">
-                    <h3>Lemon</h3>
-                    <p>Per Kg</p>
-                    <h2>35$</h2>
-                    <a class="shopping-cart-button" href="cart.html"><i class="fas fa-shopping-cart"></i>Add to Cart</a>
-                  </div>
-              </div>
-              <div class="filterDiv avocado col-sm-4">
-                  <div class="card">
-                    <img src="img/products/product-img-4.jpg" alt="">
-                    <h3>Avocado</h3>
-                    <p>Per Kg</p>
-                    <h2>50$</h2>
-                    <a class="shopping-cart-button" href="cart.html"><i class="fas fa-shopping-cart"></i>Add to Cart</a>
-                  </div>
-              </div>
-              <div class="filterDiv greenApple col-sm-4">
-                  <div class="card">
-                    <img src="img/products/product-img-5.jpg" alt="">
-                    <h3>Green Apple</h3>
-                    <p>Per Kg</p>
-                    <h2>45$</h2>
-                    <a class="shopping-cart-button" href="cart.html"><i class="fas fa-shopping-cart"></i>Add to Cart</a>
-                  </div>
-              </div>
-              <div class="filterDiv strawberry col-sm-4">
-                  <div class="card">
-                    <img src="img/products/product-img-6.jpg" alt="">
-                    <h3>Strawberry</h3>
-                    <p>Per Kg</p>
-                    <h2>80$</h2>
-                    <a class="shopping-cart-button" href="cart.html"><i class="fas fa-shopping-cart"></i>Add to Cart</a>
-                  </div>
-              </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="page">
-                <ul>
-                  <li><a href="#">Prev</a></li>
-                  <li><a href="#">1</a></li>
-                  <li><a class="active" href="#">2</a></li>
-                  <li><a href="#">3</a></li>
-                  <li><a href="#">Next</a></li>
-                </ul>
-              </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                      <div class="container mt-0">
+                        <div class="btn-group">
+                          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#form" aria-expanded="true" aria-controls="shipping">
+                              <i class="fas fa-check-circle" style="color: #f2872f;"></i> Billing Address
+                          </button>
+                        </div>   
+                        <div class="collapse show" id="form">
+                            <div class="card card-body">
+                              <form action="/action_page.php">
+                                <div class="row">
+                                  <div class="col-75">
+                                    <input type="text" id="fname" name="firstname" placeholder="Name">
+                                  </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-75">
+                                      <input type="text" id="fname" name="firstname" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-75">
+                                      <input type="text" id="fname" name="firstname" placeholder="Address">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-75">
+                                      <input type="text" id="fname" name="firstname" placeholder="Phone">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-75">
+                                    <textarea id="subject" name="subject" placeholder="Say something" style="height:200px"></textarea>
+                                </div>
+                                </div>
+                              </form>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="container mt-0">
+                        <div class="btn-group">
+                          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#shipping" aria-expanded="false" aria-controls="shipping">
+                              <i class="fas fa-check-circle" style="color: #f2872f;"></i> Shipping Address
+                          </button>
+                        </div>
+                        <div class="collapse" id="shipping">
+                            <div class="card card-body">
+                                Your shipping address form is here.
+                            </div>
+                        </div>
+                      </div>
+                      <div class="container mt-0">
+                        <div class="btn-group">
+                          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#card-details" aria-expanded="false" aria-controls="shipping">
+                              <i class="fas fa-check-circle" style="color: #f2872f;"></i> Card Details
+                          </button>
+                        </div>      
+                        <div class="collapse" id="card-details">
+                            <div class="card card-body">
+                                Your card details goes here.
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="order-details-table">
+                            <table class="order-details">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Your order details
+                                        </th>
+                                        <th>Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            Product
+                                        </td>
+                                        <td>Total</td>
+                                        <tr><td>Stawberry</td>
+                                        <td>$85.00</td></tr>
+                                        <tr><td>Berry</td>
+                                        <td>$70.00</td></tr>
+                                        <tr><td>Lemon</td>
+                                        <td>$35.00</td></tr>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr><td>Subtotal</td>
+                                    <td>$190</td></tr>
+                                    <tr><td>Shipping</td>
+                                    <td>$50</td></tr>
+                                    <tr><td>Total</td>
+                                    <td>$240</td></tr>
+                                </tbody>
+
+                            </table>
+                            <a href="cart.html" class="place-order">Place Order</a>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
-          </div>
         </div>
         <div class="section3">
             <div class="container">
@@ -172,11 +205,10 @@
                     <div class="item"><img src="img/company-logos/5.png" alt=""></div>
                   </div>
                 </div>
-              </div>
             </div>
-        </div>  
-    </section>
-    <footer>
+          </div>  
+      </section>
+      <footer>
         <div class="footer1">
           <div class="container">
             <div class="row">
@@ -234,80 +266,35 @@
           </div>
         </div>
       </footer>
-
+  
+          <!-- owl carousel jquery cdn-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+       <!-- owl carousel js cdn-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
       <script>
-        filterSelection("all")
-        function filterSelection(c) {
-          var x, i;
-          x = document.getElementsByClassName("filterDiv");
-          if (c == "all") c = "";
-          for (i = 0; i < x.length; i++) {
-            w3RemoveClass(x[i], "show");
-            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-          }
-        }
-        
-        function w3AddClass(element, name) {
-          var i, arr1, arr2;
-          arr1 = element.className.split(" ");
-          arr2 = name.split(" ");
-          for (i = 0; i < arr2.length; i++) {
-            if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-          }
-        }
-        
-        function w3RemoveClass(element, name) {
-          var i, arr1, arr2;
-          arr1 = element.className.split(" ");
-          arr2 = name.split(" ");
-          for (i = 0; i < arr2.length; i++) {
-            while (arr1.indexOf(arr2[i]) > -1) {
-              arr1.splice(arr1.indexOf(arr2[i]), 1);     
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            items:4,
+            loop:true,
+            margin:10,
+            autoplay:true,
+            autoplayTimeout:3000,
+  
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:4
+                }
             }
-          }
-          element.className = arr1.join(" ");
-        }
-        // Add active class to the current button (highlight it)
-        var header = document.getElementById("myBtnContainer");
-        var btns = header.getElementsByClassName("btn");
-        for (var i = 0; i < btns.length; i++) {
-          btns[i].addEventListener("click", function() {
-          var current = document.getElementsByClassName("active");
-          current[0].className = current[0].className.replace(" active", "");
-          this.className += " active";
-          });
-        }
-
-
-        </script>
-
-
-      <!-- owl carousel jquery cdn-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-      <!-- owl carousel js cdn-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script>
-      var owl = $('.owl-carousel');
-      owl.owlCarousel({
-          items:4,
-          loop:true,
-          margin:10,
-          autoplay:true,
-          autoplayTimeout:3000,
-
-          responsive:{
-              0:{
-                  items:1
-              },
-              600:{
-                  items:3
-              },
-              1000:{
-                  items:4
-              }
-          }
-      });
-    </script>
-</body>
-</html>
+        });
+      </script>
+      
+  </body>
+  </html>
+  

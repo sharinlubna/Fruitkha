@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.section1{
+    background-image: url('../img/breadcrumb-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 1;
+    position: relative;
+}
+.section1 .content{
+    margin: 0 auto;
+    padding-top: 200px;
+    padding-bottom: 150px;
+    text-align: center;
+}
+.section1 .content p{
+    color: #f2872f;
+    font-weight: 700;
+    letter-spacing: 7px;
+    font-size: 15px;
+}
+.section1 .content h1{
+    color: white;
+    font-size: 50px;
+    line-height: 1.3;
+    font-weight: 700;
+}
+.section2{
+    padding: 150px 0;
+}
+.section2 .btn-group>.btn:hover {
+    z-index: -1;
+}
+.section2 .btn-group{
+    width: 100%;
+}
+.section2 .btn-group p{
+    margin-bottom: 0;
+}
+.section2 .btn-primary{
+    width: 100%;
+    background-color: #ebebeb;
+    color: black;
+    font-weight: 600;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    border: none;
+    position: relative;
+    padding-left: 50px;
+    text-align: left;
+    margin-top: 20px;
+}
+.section2 .btn-primary{
+    --bs-btn-color: #000000;
+    --bs-btn-bg: #ebebeb;
+    --bs-btn-border-color: #ebebeb;
+    --bs-btn-hover-color: #000000;
+    --bs-btn-hover-bg: #ebebeb;
+    --bs-btn-hover-border-color: #ebebeb;
+    --bs-btn-active-color: #000000;
+    --bs-btn-active-bg: #ebebeb;
+    --bs-btn-active-border-color: #ebebeb;
+    --bs-btn-disabled-color: #000000;
+    --bs-btn-disabled-bg: #ebebeb;
+    --bs-btn-disabled-border-color: #ebebeb;
+}
+.section2 .btn-primary:hover{
+    background-color: #ebebeb;
+    color: black;
+}
+.section2 .card-body{
+    border-top: none;
+    border-radius: 0;
+}
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    resize: vertical;
+    font-size: 15px;
+}
+.col-75 {
+    float: left;
+    width: 100%;
+    margin-top: 6px;
+}
+.section2 form .row{
+    padding: 10px;
+}
+.section2 form .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+table {
+    border-collapse: collapse;
+}
+thead {
+    border-bottom: 1px solid #eee;
+}
+.order-details {
+    border: 1px solid #efefef;
+}
+.order-details thead tr th {
+    background-color: #eeeeee;
+    padding: 18px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.order-details tbody td {
+    border: 1px solid #efefef;
+    padding: 15px;
+}
+.place-order{
+    margin-top: 30px;
+    display: inline-block;
+    background-color: #f2872f;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+  
+.section3{
+    padding: 50px 0;
+    background-color: #f1f1f1;
+}
+.section3 .container{
+    padding: 0 20px;
+}
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: 114px;
+    max-width: 180px;
+    margin: 0 auto;
+}
+#owl-demo .owl-dot{
+    display: none;
+}
+
+/* media query for tablets */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .section2 .col-lg-4{
+        margin: 0 auto;
+        width: 97%;
+        
+    }
+    .order-details{
+        width: 100%;
+    }
+    .order-details-table{
+        margin-top: 50px;
+    }
+}
+
+/* media query for mobile phones */
+
+@media only screen and (min-width:  576px) and (max-width: 767px){
+    .section1 .content{
+        padding-top: 100px;
+    }
+    .section1 .content h1{
+        font-size: 30px;
+    }
+    .section2 .col-lg-4{
+        margin-left: 10px;   
+    }
+    .order-details-table{
+        margin-top: 50px;
+    }
+}
+/* media query for small mobiles */
+@media only screen and (min-width:  380px) and (max-width: 575px){
+    .section1 .content{
+        padding-top: 100px;
+    }
+    .section1 .content h1{
+        font-size: 30px;
+    }
+    .section2 .col-lg-4{
+        margin-left: 10px;   
+    }
+    .order-details-table{
+        margin-top: 50px;
+    }
+}

@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.section1{
+    background-image: url('../img/breadcrumb-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 1;
+    position: relative;
+}
+.section1 .content{
+    margin: 0 auto;
+    padding-top: 200px;
+    padding-bottom: 150px;
+    text-align: center;
+}
+.section1 .content p{
+    color: #f2872f;
+    font-weight: 700;
+    letter-spacing: 7px;
+    font-size: 15px;
+}
+.section1 .content h1{
+    color: white;
+    font-size: 50px;
+    line-height: 1.3;
+    font-weight: 700;
+}
+.section2{
+    padding: 150px 0;
+}
+.section2 .col-lg-8 table{
+    border: 1px solid #f9f9f9;
+    width: 100%;
+}
+.section2 .col-lg-8 table thead {
+    border-bottom: 1px solid #eee;
+}
+.section2 .col-lg-8 table thead tr{
+    background-color: #efefef;
+}
+.section2 .col-lg-8 table th{
+    border-right: 1px solid #efefef;
+    padding: 15px;
+    font-weight: 500;
+    text-align: center;
+}
+.section2 .col-lg-8 table tbody tr td{
+    border: 1px solid #efefef;
+    padding: 20px 0;
+    color: black;
+    text-align: center;
+}
+.section2 .col-lg-8 table td a{
+    color: black;
+}
+.section2 .col-lg-8 table td a:hover{
+    color: #f2872f;
+    text-decoration: none;
+}
+.section2 .col-lg-8 table td img{
+    max-width: 50px;
+    box-shadow: none;
+    margin-bottom: 0
+}
+.section2 .col-lg-8 table input[type="number"] {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100px;
+    margin-bottom: 15px;
+}
+.section2 .col-lg-4 table{
+    border: 1px solid #efefef;
+    width: 100%;
+}
+.section2 .col-lg-4 table{
+    border: 1px solid #efefef;
+    width: 100%;
+} 
+.section2 .col-lg-4 table thead {
+    border-bottom: 1px solid #eee;
+}
+.section2 .col-lg-4 table thead tr{
+    background-color: #efefef;
+}
+.section2 .col-lg-4 table th {
+    font-weight: 500;
+    font-size: 15px;
+    padding: 15px;
+}
+.section2 .col-lg-4 tbody td {
+    border: 1px solid #efefef;
+    padding: 19px 15px;
+}
+.section2 .col-lg-4 tbody .title{
+    margin-right: 32px;
+    font-weight: bolder;
+}
+.section2 .cart-button{
+    margin-top: 30px;
+}
+.section2 .cart-button a{
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    background-color: #f2872f;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 50px;
+}
+.section2 .cart-button .update{
+    margin-right: 20px;
+}
+.section2 .coupon{
+    margin-top: 50px;
+}
+.section2 .coupon h3{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 33px;
+}
+.section2 .coupon-form input[type=text] {
+    border: 1px solid #ddd;
+    color: #051922;
+    padding: 15px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.section2 .coupon-form input[type="submit"] {
+    background-color: #F28123;
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 15px;
+    border: none !important;
+    cursor: pointer;
+    padding: 15px 25px;
+    border-radius: 3px;
+    border-radius: 50px !important;
+}
+.section3{
+    padding: 50px 0;
+    background-color: #f1f1f1;
+}
+.section3 .container{
+    padding: 0 20px;
+}
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: 114px;
+    max-width: 180px;
+    margin: 0 auto;
+}
+#owl-demo .owl-dot{
+    display: none;
+}
+
+/* media query for tablets */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .section2 .col-lg-4{
+        width: 100%;
+        margin-top: 50px;
+    }
+        
+}
+
+/* media query for mobile phones */
+
+@media only screen and (min-width:  576px) and (max-width: 767px){
+    .section1 .content{
+        padding-top: 100px;
+    }
+    .section1 .content h1{
+        font-size: 30px;
+    }
+    .section2 .col-lg-4{
+        width: 100%;
+        margin-top: 50px;
+    }
+}
+
+/* media query for small mobiles */
+@media only screen and (min-width:  380px) and (max-width: 575px){
+    .section1 .content{
+        padding-top: 100px;
+    }
+    .section1 .content h1{
+        font-size: 30px;
+    }
+    .section2 .col-lg-4{
+        width: 100%;
+        margin-top: 50px;
+    }
+}
